@@ -5,7 +5,7 @@
 **Business context:** Multi-region e-commerce retailer operating in Lagos, Abuja and Port Harcourt  
 **Primary tool:** Microsoft Excel (PivotTables, formulas, charts and financial decomposition)  
 
-![Northstar Retail executive diagnostic dashboard](visuals/Executive_Dashboard.pdf)
+[Northstar Retail executive diagnostic dashboard](visuals/Executive_Dashboard.pdf)
 
 > **Quick takeaway:** The principal deterioration occurred in purchase conversion, especially mobile checkout completion. Paid marketing efficiency and Fashion refunds added pressure, but the evidence does not establish the precise technical cause of the mobile decline.
 
