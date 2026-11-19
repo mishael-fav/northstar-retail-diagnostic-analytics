@@ -63,7 +63,7 @@ The **VP of Growth** wanted to know what was happening, when the problem started
 
 ## 3. Dataset Overview & Tools
 
-The project combines three principal data sources described in the [case brief](data/case_brief.md):
+The project combines three principal data sources described in the [Data Dictionary](data/data_dictionary.md):
 
 | Source | Role in the analysis | Grain / analytical caution |
 |---|---|---|
