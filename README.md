@@ -102,17 +102,28 @@ The dashboard above provides the consolidated executive view. The complete chart
 
 ### 6.1 Weekly Mobile Checkout Diagnosis
 
-Mobile checkout completion dropped from around **46.0% to 25.6%**, approximately **−20.4 percentage points**, in the week commencing **17 March 2025**. Desktop checkout completion remained near **49%**. A field-validation update was released on **14 March 2025**.
+The weekly trend shows that Northstar Retail’s revenue deterioration was closely tied to a sharp breakdown in **mobile checkout completion** rather than a broad-based decline across all devices. Mobile checkout completion fell abruptly from **46.0% to 25.6%**, a drop of approximately **20.4 percentage points**, in the week beginning **17 March 2025**. By contrast, desktop checkout completion remained relatively stable at around **49%**, indicating that the disruption was concentrated within the mobile purchase journey rather than the entire checkout process.
+
+This pattern is important because it helps narrow the diagnostic focus. If both desktop and mobile had declined at the same time, the issue might have pointed to a broader demand, pricing, or site-wide conversion problem. Instead, the device-specific deterioration suggests that the most likely business impact came from a mobile-side friction point introduced around mid-March. The release log shows that a **field-validation update was deployed on 14 March 2025**, only days before the decline became visible in the weekly data.
 
 ![Weekly Mobile Checkout Trend](visuals/mobile_checkout_trend.png)
 
-**Interpretation:** The device-specific timing makes mobile checkout the highest-priority technical investigation, but proximity to a release does not establish causation.
+**Interpretation:**  
+The timing and device concentration make mobile checkout the highest-priority investigation area. However, the evidence only establishes **temporal proximity**, not confirmed causation. The data show **when** the problem appeared and **where** it was concentrated, but not the exact technical mechanism responsible.
 
-**Action:** Investigate validation errors, browser/device issues, payment paths and session continuity. Use controlled testing or rollback evidence.
+**Business implication:**  
+Because mobile accounts for a substantial share of traffic and order activity, a sustained deterioration in mobile checkout completion would have a disproportionate effect on overall conversion, order volume and net revenue. This makes mobile checkout performance the most commercially material breakdown in the entire diagnostic analysis.
+
+**Action:**  
+Investigate form-validation errors, browser/device compatibility issues, payment-step drop-offs and session continuity across the mobile journey. Any suspected release issue should be confirmed through controlled testing, technical logs, rollback evidence or A/B comparison before being treated as the root cause.
 
 ### 6.2 Revenue Driver Decomposition
 
-Conversion represented **97.3% of the negative components** of this revenue bridge. That percentage **does not** mean 97.3% of the final net revenue decline; positive contributions offset some of the negative ones.
+Despite an **8.3% increase in website sessions**, Northstar Retail's net revenue declined by **24.5%, from $1.385 million in Q2 2024 to $1.046 million in Q2 2025**, representing a loss of approximately **$338,988**. To determine the factors responsible, a revenue driver decomposition was conducted to isolate the financial contributions of traffic, purchase conversion, average order value (AOV), discounts, and refunds.
+
+The analysis revealed that **purchase conversion was the dominant contributor to revenue deterioration**, generating an estimated **$486,832 negative revenue impact** as conversion declined from **3.10% to 2.22% (−28.5%)**. This represented approximately **97.3% of all negative components in the revenue bridge**. Importantly, this percentage does not represent 97.3% of the final net revenue decline, as positive contributions from other drivers partially offset the losses.
+
+Increased website traffic contributed approximately **$131,418 in additional revenue**, while changes in discount amounts generated a further **$29,753 positive contribution**. However, these gains were insufficient to offset the conversion deterioration. Changes in gross AOV (−$7,604) and refunds (−$5,723) had comparatively smaller negative impacts, confirming that reduced purchase completion, rather than pricing or refund deductions, was the principal factor behind the revenue shortfall.
 
 ![Revenue Driver Decomposition](visuals/revenue_driver_bridge.png)
 
@@ -125,11 +136,21 @@ Conversion represented **97.3% of the negative components** of this revenue brid
 | Refund amount | −$5,723 |
 | **Net movement** | **−$338,988** |
 
-**Action:** Validate checkout performance improvements before committing additional acquisition spend.
+**Interpretation:** The revenue decline was primarily driven by a deterioration in purchase conversion, which outweighed the financial benefits of increased traffic and reduced discount deductions. The findings indicate that generating additional visitors alone would not adequately address the revenue problem while checkout completion remained depressed.
+
+**Business Implication:** Increasing marketing expenditure without improving purchase conversion risks directing additional traffic into an underperforming checkout funnel. Improving conversion efficiency is therefore a more immediate priority than expanding customer acquisition.
+
+**Recommended Action:** Prioritise technical investigation of the mobile checkout process and validate any corrective changes through controlled testing. Monitor checkout completion, purchase conversion, order volumes, and net revenue to assess whether verified improvements translate into financial recovery before expanding advertising expenditure.
 
 ### 6.3 Regional Mobile Revenue Losses
 
-The decline occurred across all three regions. **Lagos has the greatest absolute financial exposure**, but the cross-region pattern suggests a shared mobile-checkout investigation is more useful than treating the issue as Lagos-specific.
+Further segmentation of Northstar Retail's mobile performance revealed that the revenue deterioration was **not isolated to a single geographical market**. All three operating regions—Lagos, Abuja, and Port Harcourt—experienced substantial declines in mobile checkout completion and associated revenue losses during the review period.
+
+The analysis identified approximately **$375,373 in combined mobile revenue losses** across the three regions. **Lagos accounted for the largest share, contributing $172,617 (46.0%)**, followed by Abuja with **$106,589 (28.4%)** and Port Harcourt with **$96,168 (25.6%)**. This establishes Lagos as the region with the greatest absolute financial exposure to the mobile checkout deterioration.
+
+However, the checkout completion analysis revealed a broader pattern. Mobile checkout completion declined by **21.7 percentage points in Lagos, 19.3 percentage points in Abuja, and 21.8 percentage points in Port Harcourt**. Despite differences in their absolute financial losses, all three regions experienced a similar deterioration in checkout performance.
+
+This consistency is analytically important because it suggests that the problem may originate from a **shared mobile checkout process rather than an issue specific to one regional market**. Lagos's larger financial contribution does not necessarily mean that its checkout system performed worse; its higher revenue exposure may reflect differences in transaction volumes or customer activity. Additional regional transaction analysis would be required to establish the precise explanation.
 
 ![Regional Mobile Revenue Losses](visuals/regional_revenue_losses.png)
 
@@ -139,27 +160,47 @@ The decline occurred across all three regions. **Lagos has the greatest absolute
 | Abuja | $106.6K | 28.4% |
 | Port Harcourt | $96.2K | 25.6% |
 
-**Action:** Prioritise Lagos by financial impact while testing across all markets.
+**Interpretation:** Although Lagos experienced the largest absolute mobile revenue loss, the deterioration in checkout completion was widespread across all three regions. This pattern supports investigating common mobile checkout functionality rather than assuming the issue originated from Lagos-specific operations.
+
+**Business Implication:** The cross-regional decline suggests that the mobile checkout issue has broader business implications. Focusing corrective efforts exclusively on Lagos could leave similar conversion problems unresolved in Abuja and Port Harcourt. Nevertheless, Lagos should receive greater attention when prioritising financial exposure because it accounts for nearly half of the estimated regional mobile revenue losses.
+
+**Recommended Action:** Investigate shared mobile checkout processes across all three regions, including form validation, payment processing, browser compatibility, and session continuity. Prioritise Lagos when evaluating potential financial impact, but validate suspected issues and corrective interventions across all markets. Monitor regional checkout completion, mobile orders, and net revenue to assess whether verified improvements produce consistent performance recovery.
 
 ### 6.4 Paid Marketing Efficiency
 
-Paid spend increased **24.6%** while paid-channel net revenue declined **22.2%**. Overall net ROAS declined **37.6% YoY** (2.61× → 1.63×).
+Northstar Retail's paid marketing performance deteriorated significantly during Q2 2025, as increased advertising expenditure failed to generate corresponding revenue growth. Total paid-media spending increased by **24.6%, from $265,558 in Q2 2024 to $330,773 in Q2 2025**, while paid-channel net revenue declined by **22.2%, from $692,994 to $539,040**.
 
-Paid Social ROAS declined approximately **44.6% QoQ** from **2.77× to 1.54×**, while its spending increased **61.5% QoQ**. The quarter-on-quarter Paid Social comparison should not be confused with the overall year-on-year paid-media comparison.
+Consequently, overall **net Return on Ad Spend (ROAS) declined from 2.61x to 1.63x, representing a 37.6% year-over-year reduction in marketing efficiency**. This indicates that every dollar spent on paid advertising generated approximately $1.63 in net revenue during Q2 2025, compared with $2.61 in the corresponding quarter of 2024. The decline reflects reduced revenue generation relative to advertising expenditure, raising concerns about the efficiency of continued budget expansion.
+
+Further channel-level analysis revealed that **Paid Social experienced particularly severe deterioration**. Between Q1 and Q2 2025, Paid Social ROAS declined from **2.77x to 1.54x (−44.6% QoQ)**, while advertising expenditure increased by approximately **61.5% over the same period**. Paid Search also experienced declining ROAS, falling from **2.21x to 1.73x**. These findings indicate that both major paid channels experienced weaker revenue returns, with Paid Social showing the sharper quarter-over-quarter deterioration.
+
+The timing of this decline is particularly relevant when considered alongside the mobile checkout investigation. Paid marketing efficiency weakened during the period when mobile checkout completion deteriorated substantially. Since the checkout decline was also observed across non-paid acquisition channels, the evidence suggests that **marketing inefficiency compounded the broader conversion problem rather than independently explaining its origin**. However, further analysis would be necessary to quantify precisely how much of the paid-channel deterioration resulted from checkout friction versus changes in traffic quality or campaign performance.
 
 ![Paid Marketing Efficiency](visuals/paid_marketing_roas.png)
 
-**Action:** Review marginal Paid Social expenditure, segment performance by device and reassess efficiency following verified checkout remediation.
+**Interpretation:** Paid marketing expenditure increased substantially despite declining attributed revenue, resulting in weaker advertising efficiency. Paid Social experienced the most significant quarter-over-quarter ROAS deterioration, suggesting that additional advertising investment was producing progressively lower revenue returns. However, the available evidence does not establish that marketing strategy or traffic quality was the primary cause of the decline.
+
+**Business Implication:** Scaling advertising expenditure while purchase conversion is deteriorating risks increasing customer acquisition costs without generating proportional revenue growth. The sharp decline in Paid Social ROAS is particularly concerning because additional campaign expenditure may be directing more visitors into an underperforming mobile checkout process. Marketing performance should therefore be evaluated alongside checkout completion rather than in isolation.
+
+**Recommended Action:** Review incremental Paid Social expenditure and reassess campaign performance across devices, channels, and customer segments. Prioritise investigating the mobile checkout deterioration before committing to further budget expansion. Following verified checkout improvements, monitor paid-channel conversion, attributed revenue, net ROAS, and customer acquisition costs to determine whether marketing efficiency is recovering.
 
 ### 6.5 Refund Rate by Category
 
-Fashion's refund rate increased from **5.55% to 11.56%** (**+6.01 percentage points**). Electronics remained approximately **3.47%**, while Home & Living increased only slightly (**3.50% → 3.57%**).
+A category-level assessment of refund performance revealed that the deterioration in customer refunds was concentrated primarily within the **Fashion category**, rather than representing a widespread increase across Northstar Retail's product portfolio. Fashion's refund rate increased from **5.55% in Q2 2024 to 11.56% in Q2 2025**, representing a deterioration of **6.01 percentage points**. This indicates that the proportion of Fashion orders resulting in refunds more than doubled during the review period.
+
+In comparison, **Electronics maintained a relatively stable refund rate of approximately 3.47%**, while Home & Living experienced only a marginal increase from **3.50% to 3.57% (+0.07 percentage points)**. The substantial difference between Fashion and the other categories suggests that the refund deterioration was associated with category-specific factors rather than a general breakdown in the returns process.
+
+This finding is particularly relevant because the overall revenue investigation identified refunds as a comparatively smaller contributor to the Q2 revenue decline. The revenue driver decomposition attributed approximately **$5,723 in negative revenue impact to refunds**, compared with the much larger **$486,832 negative contribution from conversion deterioration**. Consequently, although Fashion's refund performance requires management attention, it does not explain the principal revenue deterioration observed during the period.
+
+The concentration of higher refund activity within Fashion provides a basis for further investigation into product-level and customer-related return patterns. Potential areas of investigation include inaccurate product descriptions, sizing inconsistencies, differences between advertised and received products, and product quality concerns. However, the available category-level results do not establish which of these factors contributed to the increase.
 
 ![Refund Rate by Category](visuals/refund_analysis.png)
 
-**Interpretation:** The refund issue is concentrated in Fashion but is secondary to conversion in the modelled revenue decomposition.
+**Interpretation:** Refund deterioration was concentrated within Fashion, which experienced a substantial increase in its refund rate while Electronics and Home & Living remained relatively stable. Although this represents a distinct operational concern, the financial decomposition indicates that refunds were secondary to conversion deterioration in explaining the overall revenue decline.
 
-**Action:** Examine return reasons, affected SKUs, sizing/product information and fulfilment records. The supplied analysis does not establish the specific cause of the Fashion refund increase.
+**Business Implication:** The elevated Fashion refund rate may create additional pressure through refund deductions, reverse-logistics expenses, inventory handling, and potential customer dissatisfaction. Leaving the issue uninvestigated could result in continued avoidable operational costs, even if checkout conversion improves. Management should therefore treat Fashion refunds as a separate operational improvement priority rather than confusing them with the primary driver of the revenue decline.
+
+**Recommended Action:** Conduct a deeper investigation of Fashion returns using product-level return records, customer-stated return reasons, SKU performance, sizing information, and fulfilment records. Identify products with unusually high refund frequencies and determine whether the increases are associated with product information, quality, sizing, or fulfilment issues. Track refund rates by SKU and category over subsequent reporting periods to evaluate whether corrective measures produce measurable improvements.
 
 [↑ Back to Table of Contents](#table-of-contents)
 
