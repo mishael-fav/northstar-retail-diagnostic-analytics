@@ -200,12 +200,45 @@ The concentration of higher refund activity within Fashion provides a basis for 
 
 ## 7. Recommendations & Business Implications
 
-| Priority | Recommendation | What to measure |
-|---|---|---|
-| **Critical** | Diagnose mobile checkout failures and the March 14 deployment conditions | Checkout completion, browser errors, payment success, session drop-offs |
-| **High** | Reassess Paid Social spend while mobile checkout performance is impaired | Net ROAS, spend, paid-channel conversion by device |
-| **High** | Investigate Fashion refund drivers | Refund rate, return reasons, SKU and size patterns |
-| **Ongoing** | Monitor recovery using pre/post comparisons and appropriate controls | Orders, net revenue, checkout completion, ROAS and refunds |
+
+## 7. Recommendations & Business Implications
+
+The diagnostic investigation identified **mobile checkout deterioration as the dominant contributor to Northstar Retail's Q2 2025 revenue decline**, with reduced paid-media efficiency and elevated Fashion refunds representing additional business concerns.
+
+The recommendations below prioritise actions according to their financial significance, operational implications, and the evidence required to validate potential improvements.
+
+| Priority | Business Issue | Recommended Action | Expected Business Outcome | Success Metrics |
+|---|---|---|---|---|
+| **Critical** | Mobile checkout completion declined from 45.32% to 24.41%, contributing to substantial order and revenue losses. | Investigate the March 14 field-validation release, JavaScript errors, browser compatibility, payment failures, and session interruptions. Conduct controlled testing to establish the technical cause before implementing corrective changes. | Restore mobile checkout performance, reduce purchase abandonment, and recover revenue opportunities lost through incomplete transactions. | Mobile checkout completion rate, payment success rate, checkout abandonment rate, mobile orders, purchase conversion rate. |
+| **High** | Paid marketing expenditure increased 24.6% while paid-channel revenue declined 22.2%, reducing net ROAS by 37.6%. | Review Paid Social budget allocation, identify underperforming campaigns and device segments, and evaluate incremental advertising expenditure while checkout performance remains impaired. Reassess spending following verified improvements. | Improve advertising efficiency, reduce unproductive expenditure, and strengthen revenue generated per advertising dollar. | Net ROAS, paid-channel conversion rate, marketing spend, attributed net revenue, customer acquisition cost (where available). |
+| **High** | Fashion's refund rate increased from 5.55% to 11.56%, indicating a category-specific operational concern. | Investigate return reasons, high-refund SKUs, product descriptions, sizing information, quality complaints, and fulfilment records. Implement targeted corrective measures only after identifying supported causes. | Reduce avoidable refunds, improve customer experience, and limit potential reverse-logistics expenses. | Fashion refund rate, refund amount, SKU-level refund frequency, return reasons, repeat refund patterns. |
+| **Ongoing** | Management requires reliable evidence that corrective interventions improve business performance. | Establish weekly performance monitoring and compare pre- and post-intervention results. Where feasible, use controlled experiments or comparable customer cohorts to distinguish intervention effects from other performance changes. | Enable early identification of performance deterioration and support evidence-based operational decisions. | Net revenue, purchase conversion, mobile checkout completion, order volume, net ROAS, refund rates. |
+
+### Implementation Priorities
+
+**1. Immediate Priority — Mobile Checkout Investigation**
+
+Begin with the mobile checkout process because conversion deterioration contributed approximately **−$486.8K** to the revenue bridge, outweighing the positive impact of traffic growth. The investigation should focus on identifying and verifying the specific technical or operational mechanisms affecting purchase completion.
+
+**2. Secondary Priority — Marketing Efficiency**
+
+Review paid-media expenditure while mobile checkout performance remains depressed. Additional advertising investment may generate limited financial benefits if prospective customers continue encountering difficulties completing purchases.
+
+**3. Operational Priority — Fashion Refund Investigation**
+
+Treat the Fashion refund increase as a separate operational concern. Although refunds contributed less to the modelled revenue decline than conversion deterioration, the substantial category-specific increase warrants further investigation.
+
+**4. Continuous Priority — Performance Monitoring**
+
+Develop a consistent monitoring framework to track checkout completion, revenue, marketing efficiency, and refunds following any intervention. Establish appropriate baseline metrics and evaluate performance changes before concluding that recommended actions were effective.
+
+### Expected Business Impact
+
+Successful implementation of the recommendations could improve purchase completion, advertising efficiency, and refund management. However, **the available observational data cannot establish the exact financial benefits of these interventions**.
+
+Any projected revenue recovery or cost savings should therefore be treated as estimates requiring further technical validation, financial modelling, and controlled performance measurement.
+
+[↑ Back to Table of Contents](#table-of-contents)
 
 The recommendations are **proposed next actions**, not proven interventions with guaranteed financial recovery.
 
