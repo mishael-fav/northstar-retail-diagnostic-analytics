@@ -75,7 +75,7 @@ The project combines three principal data sources described in the [case brief](
 
 **Important modelling decision:** Performance must be aggregated to **week × region × channel** before being compared or joined with marketing spend. Directly joining lower-grain performance rows to marketing-spend rows would multiply expenditure.
 
-> The complete calculations and detailed PivotTable outputs are preserved in the [Excel workbook](workbook/Northstar_Retail_Diagnostic_Analytics.xlsx). The public workbook may contain more supporting worksheets than are summarised here.
+> The complete calculations and detailed PivotTable outputs are preserved in the [workbook](workbook/Northstar_Retail_Diagnostic_Analytics.xlsx). The public workbook may contain more supporting worksheets than are summarised here.
 
 [↑ Back to Table of Contents](#table-of-contents)
 
@@ -103,7 +103,7 @@ Paid marketing spend increased **24.6%** while paid-channel net revenue fell **2
 
 ## 6. Key Findings & Visualizations
 
-The dashboard above provides the consolidated executive view. The complete charts and evidence discussion are in the [seven-page presentation](reports/Northstar_Retail_Diagnostic_Analytics_Presentation.pdf).
+The dashboard above provides the consolidated executive view. The complete charts and evidence discussion are in the [seven-page presentation](report/Northstar_Retail_Diagnostic_Analytics_Presentation.pdf).
 
 ### 6.1 Weekly Mobile Checkout Diagnosis
 
@@ -117,6 +117,10 @@ Mobile checkout completion dropped from around **46.0% to 25.6%**, approximately
 
 ### 6.2 Revenue Driver Decomposition
 
+Conversion represented **97.3% of the negative components** of this revenue bridge. That percentage **does not** mean 97.3% of the final net revenue decline; positive contributions offset some of the negative ones.
+
+![Revenue Driver Decomposition](visuals/revenue_driver_bridge.png)
+
 | Modelled driver | Contribution to Q2 revenue change |
 |---|---:|
 | Traffic | +$131,418 |
@@ -126,22 +130,19 @@ Mobile checkout completion dropped from around **46.0% to 25.6%**, approximately
 | Refund amount | −$5,723 |
 | **Net movement** | **−$338,988** |
 
-Conversion represented **97.3% of the negative components** of this revenue bridge. That percentage **does not** mean 97.3% of the final net revenue decline; positive contributions offset some of the negative ones.
-![Revenue Driver Decomposition](visuals/revenue_driver_bridge.png)
-
 **Action:** Validate checkout performance improvements before committing additional acquisition spend.
 
 ### 6.3 Regional Mobile Revenue Losses
+
+The decline occurred across all three regions. **Lagos has the greatest absolute financial exposure**, but the cross-region pattern suggests a shared mobile-checkout investigation is more useful than treating the issue as Lagos-specific.
+
+![Regional Mobile Revenue Losses](visuals/regional_revenue_losses.png)
 
 | Region | Mobile revenue loss | Share |
 |---|---:|---:|
 | Lagos | $172.6K | 46.0% |
 | Abuja | $106.6K | 28.4% |
 | Port Harcourt | $96.2K | 25.6% |
-
-The decline occurred across all three regions. **Lagos has the greatest absolute financial exposure**, but the cross-region pattern suggests a shared mobile-checkout investigation is more useful than treating the issue as Lagos-specific.
-
-![Regional Mobile Revenue Losses](visuals/regional_revenue_losses.png)
 
 **Action:** Prioritise Lagos by financial impact while testing across all markets.
 
@@ -190,8 +191,8 @@ The recommendations are **proposed next actions**, not proven interventions with
 | File | What it contains |
 |---|---|
 | [Excel analytical workbook](workbook/Northstar_Retail_Diagnostic_Analytics.xlsx) | PivotTables, validation, source data, decompositions and dashboards |
-| [Executive presentation (PDF)](reports/Northstar_Retail_Diagnostic_Analytics_Presentation.pdf) | Seven-page decision-oriented overview |
-| [Dashboard preview](visuals/executive_dashboard.png) | High-level executive dashboard |
+| [Executive presentation (PDF)](report/Northstar_Retail_Diagnostic_Analytics_Presentation.pdf) | Seven-page decision-oriented overview |
+| [Dashboard preview](visuals/Executive_Dashboard.png) | High-level executive dashboard |
 | [Case brief](data/case_brief.md) | Business context, stakeholder request, analytical scope and KPIs |
 
 **Note on reproducibility:** Open the workbook in Microsoft Excel to inspect PivotTables, formula-backed calculations, visualisations and source tables. The README explains the business logic and principal analytical decisions; it is not a substitute for the underlying workbook.
