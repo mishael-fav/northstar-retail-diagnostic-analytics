@@ -154,12 +154,6 @@ This consistency is analytically important because it suggests that the problem 
 
 ![Regional Mobile Revenue Losses](visuals/regional_revenue_losses.png)
 
-| Region | Mobile revenue loss | Share |
-|---|---:|---:|
-| Lagos | $172.6K | 46.0% |
-| Abuja | $106.6K | 28.4% |
-| Port Harcourt | $96.2K | 25.6% |
-
 **Interpretation:** Although Lagos experienced the largest absolute mobile revenue loss, the deterioration in checkout completion was widespread across all three regions. This pattern supports investigating common mobile checkout functionality rather than assuming the issue originated from Lagos-specific operations.
 
 **Business Implication:** The cross-regional decline suggests that the mobile checkout issue has broader business implications. Focusing corrective efforts exclusively on Lagos could leave similar conversion problems unresolved in Abuja and Port Harcourt. Nevertheless, Lagos should receive greater attention when prioritising financial exposure because it accounts for nearly half of the estimated regional mobile revenue losses.
