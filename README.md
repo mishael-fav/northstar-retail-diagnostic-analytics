@@ -1,4 +1,4 @@
-# Northstar Retail | Diagnostic Analytics Case Study
+# Northstar Retail | Diagnostic Analytics
 
 **Project type:** Independent data analytics portfolio  
 **Reporting period:** Q2 2025 versus Q2 2024  
