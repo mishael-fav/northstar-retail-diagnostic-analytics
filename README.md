@@ -200,9 +200,6 @@ The concentration of higher refund activity within Fashion provides a basis for 
 
 ## 7. Recommendations & Business Implications
 
-
-## 7. Recommendations & Business Implications
-
 The diagnostic investigation identified **mobile checkout deterioration as the dominant contributor to Northstar Retail's Q2 2025 revenue decline**, with reduced paid-media efficiency and elevated Fashion refunds representing additional business concerns.
 
 The recommendations below prioritise actions according to their financial significance, operational implications, and the evidence required to validate potential improvements.
@@ -240,14 +237,57 @@ Any projected revenue recovery or cost savings should therefore be treated as es
 
 [↑ Back to Table of Contents](#table-of-contents)
 
-The recommendations are **proposed next actions**, not proven interventions with guaranteed financial recovery.
+
 
 ## 8. Limitations & Further Investigation
 
-- The observation that deterioration followed the **14 March release** is not proof that the release caused it.
-- The operational logs and controlled tests required to verify a technical defect are not included in this analysis.
-- Fashion refund rates identify a concentrated issue, but reason codes and product-level evidence are needed to establish why it occurred.
-- Revenue-bridge contributions are model-derived attribution under the workbook's methodology, not experimental causal estimates.
+Although the analysis identifies the principal contributors to Northstar Retail's Q2 2025 revenue deterioration, certain limitations affect the extent to which the findings can be interpreted as definitive explanations of the underlying business problems. These limitations are important when distinguishing observed performance patterns from confirmed root causes.
+
+### 8.1 Limitations of the Analysis
+
+**1. Release Timing Does Not Establish Causation**
+
+The mobile checkout deterioration became visible during the week commencing 17 March 2025, shortly after the field-validation update deployed on 14 March 2025. Although the timing and device-specific nature of the decline make the release a reasonable investigation lead, the available performance data cannot establish that the deployment caused the deterioration. Application error logs, technical incident records, controlled testing, and rollback evidence would be required to verify this relationship.
+
+**2. Limited Technical Diagnostic Evidence**
+
+The analysis identifies where the checkout process deteriorated but does not establish the precise technical mechanism responsible. Detailed application logs, payment gateway responses, browser-level error records, and session-level customer journey data were not included in the analytical evidence. Consequently, potential issues involving form validation, payment processing, browser compatibility, or session continuity remain areas for investigation rather than confirmed root causes.
+
+**3. Limited Visibility into Refund Drivers**
+
+The category-level analysis establishes that Fashion experienced a substantial increase in its refund rate, but it does not independently identify why customers returned their purchases. Without sufficiently detailed return-reason records, SKU-level investigations, product quality information, and customer feedback, the specific operational factors responsible cannot be established.
+
+**4. Revenue Decomposition Is Model-Based**
+
+The revenue driver bridge estimates the financial contribution of traffic, conversion, average order value, discounts, and refunds to the observed year-over-year revenue change. These contributions follow the workbook's decomposition methodology and should be interpreted as modelled financial attribution rather than experimentally established causal effects. The analysis therefore identifies the dominant sources of revenue deterioration without proving that each driver independently caused the observed financial outcome.
+
+**5. Marketing Attribution Limitations**
+
+The paid marketing analysis evaluates expenditure, attributed net revenue, and ROAS across the available reporting periods. However, attributed revenue does not necessarily represent incremental revenue generated exclusively by advertising. Without additional attribution validation, customer acquisition analysis, or controlled marketing experiments, the independent contribution of paid campaigns to overall revenue performance cannot be established.
+
+### 8.2 Areas for Further Investigation
+
+The following investigations would strengthen the existing findings and provide management with more definitive evidence for corrective decisions.
+
+| Investigation Area | Additional Data Required | Analytical Objective |
+|---|---|---|
+| Mobile Checkout Failure | Application logs, browser errors, payment gateway records, session-level events | Identify the specific technical or operational factors responsible for mobile checkout abandonment. |
+| March 14 Deployment | Release documentation, incident records, rollback evidence, controlled test results | Establish whether the field-validation update contributed to the subsequent checkout deterioration. |
+| Regional Performance | Regional transaction records, customer activity, device-level conversion data | Determine whether regional differences reflect transaction volumes, customer behaviour, or variations in checkout performance. |
+| Paid Marketing Efficiency | Campaign-level attribution, customer acquisition data, audience segments, incremental conversion tests | Determine which campaigns and acquisition segments experienced the greatest deterioration in advertising efficiency. |
+| Fashion Refunds | Return-reason codes, SKU-level return records, product specifications, customer feedback | Identify the products and operational factors responsible for the increase in Fashion refunds. |
+| Post-Intervention Performance | Subsequent weekly performance data and appropriate comparison groups | Evaluate whether corrective interventions produce measurable improvements in conversion, revenue, marketing efficiency, and refunds. |
+
+### Overall Assessment
+
+The analysis provides a structured explanation of Northstar Retail's Q2 2025 performance deterioration and establishes purchase conversion, particularly mobile checkout completion, as the dominant area requiring management attention.
+
+However, identifying a significant performance relationship is not equivalent to establishing its underlying cause. The next stage should therefore move beyond historical performance analysis towards technical validation, more granular investigation, and controlled measurement of corrective interventions.
+
+These additional investigations would allow management to move from identifying where performance deteriorated to establishing why it happened and determining which interventions deliver measurable business improvements.
+
+[↑ Back to Table of Contents](#table-of-contents)
+
 
 ## 9. Project Files & Deliverables
 
