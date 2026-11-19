@@ -1,14 +1,11 @@
 # Northstar Retail | Diagnostic Analytics Case Study
 
-**Investigating a 24.5% Q2 2025 net-revenue decline despite 8.3% growth in website sessions.**
-
-**Project type:** Independent data analytics portfolio case study  
+**Project type:** Independent data analytics portfolio  
 **Reporting period:** Q2 2025 versus Q2 2024  
 **Business context:** Multi-region e-commerce retailer operating in Lagos, Abuja and Port Harcourt  
 **Primary tool:** Microsoft Excel (PivotTables, formulas, charts and financial decomposition)  
-**Data:** Case-study data; not presented as an independently verified client engagement
 
-![Northstar Retail executive diagnostic dashboard](visuals/executive_dashboard.png)
+![Northstar Retail executive diagnostic dashboard](visuals/Executive_Dashboard.png)
 
 > **Quick takeaway:** The principal deterioration occurred in purchase conversion, especially mobile checkout completion. Paid marketing efficiency and Fashion refunds added pressure, but the evidence does not establish the precise technical cause of the mobile decline.
 
@@ -43,7 +40,8 @@ The analysis combines customer-funnel metrics, order and revenue performance, ma
 
 ## 2. Business Problem & Stakeholders
 
-Management observed weaker Q2 2025 revenue despite higher website traffic and advertising investment.
+Northstar Retail is a multi-region e-commerce business operating across Lagos, Abuja, and Port Harcourt. In Q2 2025, net revenue declined by 24.5% YOY, from $1.385 million to $1.046 million, representing a loss of approximately $338,988, despite an 8.3% increase in website sessions. Meanwhile, paid marketing expenditure increased by 24.6%, raising concerns about declining marketing efficiency. 
+Management therefore commissioned a diagnostic investigation to determine why increased traffic and advertising investment were not translating into revenue growth, identify when the deterioration began, establish the primary business drivers, and recommend evidence-based corrective actions.
 
 | Business measure | Q2 2024 | Q2 2025 | Movement |
 |---|---:|---:|---:|
@@ -91,20 +89,6 @@ The analysis follows **V → T → D → B → C**:
 4. **Benchmark:** Compare against prior-period performance and stakeholder hypotheses.
 5. **Conclude:** Rank the drivers, identify evidence gaps and recommend next investigations.
 
-**Core definitions used in the case brief:**
-
-| Metric | Definition |
-|---|---|
-| Net revenue | Gross revenue − discount amount − refund amount |
-| Purchase conversion rate | Orders ÷ sessions |
-| Add-to-cart rate | Add-to-cart events ÷ sessions |
-| Checkout start rate | Checkout starts ÷ add-to-cart events |
-| Checkout completion rate | Orders ÷ checkout starts |
-| Gross average order value | Gross revenue ÷ orders |
-| Net ROAS | Paid-channel net revenue ÷ marketing spend |
-
-**Interpretation rule:** A relative percentage change and a percentage-point change are not interchangeable. For example, mobile checkout completion falling from approximately 45.3% to 24.4% is a decline of approximately **20.9 percentage points**, or **46.1% relative**.
-
 [↑ Back to Table of Contents](#table-of-contents)
 
 ## 5. Executive Summary
@@ -119,17 +103,17 @@ Paid marketing spend increased **24.6%** while paid-channel net revenue fell **2
 
 ## 6. Key Findings & Visualizations
 
-The dashboard above provides the consolidated executive view. The complete charts and evidence discussion are in the [seven-page presentation](reports/Northstar_Retail_Executive_Analysis.pdf).
+The dashboard above provides the consolidated executive view. The complete charts and evidence discussion are in the [seven-page presentation](reports/Northstar_Retail_Diagnostic_Analytics_Presentation.pdf).
 
 ### 6.1 Weekly Mobile Checkout Diagnosis
 
 Mobile checkout completion dropped from around **46.0% to 25.6%**, approximately **−20.4 percentage points**, in the week commencing **17 March 2025**. Desktop checkout completion remained near **49%**. A field-validation update was released on **14 March 2025**.
 
+![Weekly Mobile Checkout Trend](visuals/mobile_checkout_trend.png)
+
 **Interpretation:** The device-specific timing makes mobile checkout the highest-priority technical investigation, but proximity to a release does not establish causation.
 
 **Action:** Investigate validation errors, browser/device issues, payment paths and session continuity. Use controlled testing or rollback evidence.
-
-[↑ Back to Table of Contents](#table-of-contents)
 
 ### 6.2 Revenue Driver Decomposition
 
@@ -143,10 +127,9 @@ Mobile checkout completion dropped from around **46.0% to 25.6%**, approximately
 | **Net movement** | **−$338,988** |
 
 Conversion represented **97.3% of the negative components** of this revenue bridge. That percentage **does not** mean 97.3% of the final net revenue decline; positive contributions offset some of the negative ones.
+![Revenue Driver Decomposition](visuals/revenue_driver_bridge.png)
 
 **Action:** Validate checkout performance improvements before committing additional acquisition spend.
-
-[↑ Back to Table of Contents](#table-of-contents)
 
 ### 6.3 Regional Mobile Revenue Losses
 
@@ -158,9 +141,9 @@ Conversion represented **97.3% of the negative components** of this revenue brid
 
 The decline occurred across all three regions. **Lagos has the greatest absolute financial exposure**, but the cross-region pattern suggests a shared mobile-checkout investigation is more useful than treating the issue as Lagos-specific.
 
-**Action:** Prioritise Lagos by financial impact while testing across all markets.
+![Regional Mobile Revenue Losses](visuals/regional_revenue_losses.png)
 
-[↑ Back to Table of Contents](#table-of-contents)
+**Action:** Prioritise Lagos by financial impact while testing across all markets.
 
 ### 6.4 Paid Marketing Efficiency
 
@@ -168,13 +151,15 @@ Paid spend increased **24.6%** while paid-channel net revenue declined **22.2%**
 
 Paid Social ROAS declined approximately **44.6% QoQ** from **2.77× to 1.54×**, while its spending increased **61.5% QoQ**. The quarter-on-quarter Paid Social comparison should not be confused with the overall year-on-year paid-media comparison.
 
-**Action:** Review marginal Paid Social expenditure, segment performance by device and reassess efficiency following verified checkout remediation.
+![Paid Marketing Efficiency](visuals/paid_marketing_roas.png)
 
-[↑ Back to Table of Contents](#table-of-contents)
+**Action:** Review marginal Paid Social expenditure, segment performance by device and reassess efficiency following verified checkout remediation.
 
 ### 6.5 Refund Rate by Category
 
 Fashion's refund rate increased from **5.55% to 11.56%** (**+6.01 percentage points**). Electronics remained approximately **3.47%**, while Home & Living increased only slightly (**3.50% → 3.57%**).
+
+![Refund Rate by Category](visuals/refund_analysis.png)
 
 **Interpretation:** The refund issue is concentrated in Fashion but is secondary to conversion in the modelled revenue decomposition.
 
@@ -193,24 +178,19 @@ Fashion's refund rate increased from **5.55% to 11.56%** (**+6.01 percentage poi
 
 The recommendations are **proposed next actions**, not proven interventions with guaranteed financial recovery.
 
-[↑ Back to Table of Contents](#table-of-contents)
-
 ## 8. Limitations & Further Investigation
 
 - The observation that deterioration followed the **14 March release** is not proof that the release caused it.
 - The operational logs and controlled tests required to verify a technical defect are not included in this analysis.
 - Fashion refund rates identify a concentrated issue, but reason codes and product-level evidence are needed to establish why it occurred.
 - Revenue-bridge contributions are model-derived attribution under the workbook's methodology, not experimental causal estimates.
-- The project is an independent portfolio case study; its data and outcomes should not be represented as verified work for an actual client.
-
-[↑ Back to Table of Contents](#table-of-contents)
 
 ## 9. Project Files & Deliverables
 
 | File | What it contains |
 |---|---|
 | [Excel analytical workbook](workbook/Northstar_Retail_Diagnostic_Analytics.xlsx) | PivotTables, validation, source data, decompositions and dashboards |
-| [Executive presentation (PDF)](reports/Northstar_Retail_Executive_Analysis.pdf) | Seven-page decision-oriented overview |
+| [Executive presentation (PDF)](reports/Northstar_Retail_Diagnostic_Analytics_Presentation.pdf) | Seven-page decision-oriented overview |
 | [Dashboard preview](visuals/executive_dashboard.png) | High-level executive dashboard |
 | [Case brief](data/case_brief.md) | Business context, stakeholder request, analytical scope and KPIs |
 
