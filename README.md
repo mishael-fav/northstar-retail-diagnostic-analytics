@@ -7,8 +7,6 @@
 
 [Northstar Retail executive diagnostic dashboard](visuals/Executive_Dashboard.pdf)
 
-> **Quick takeaway:** The principal deterioration occurred in purchase conversion, especially mobile checkout completion. Paid marketing efficiency and Fashion refunds added pressure, but the evidence does not establish the precise technical cause of the mobile decline.
-
 ## Table of Contents
 
 - [1. Project Overview](#1-project-overview)
@@ -59,8 +57,6 @@ The **VP of Growth** wanted to know what was happening, when the problem started
 | Operations | Returns may be the main problem |
 | Finance | Marketing spend may be rising faster than revenue |
 
-[↑ Back to Table of Contents](#table-of-contents)
-
 ## 3. Dataset Overview & Tools
 
 The project combines three principal data sources described in the [Data Dictionary](data/data_dictionary.md):
@@ -89,7 +85,6 @@ The analysis follows **V → T → D → B → C**:
 4. **Benchmark:** Compare against prior-period performance and stakeholder hypotheses.
 5. **Conclude:** Rank the drivers, identify evidence gaps and recommend next investigations.
 
-[↑ Back to Table of Contents](#table-of-contents)
 
 ## 5. Executive Summary
 
